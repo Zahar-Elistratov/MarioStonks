@@ -1,0 +1,380 @@
+@import url('./normalize.css');
+
+/* HEADER */
+.header {
+	padding: 40px 0;
+
+	background: #1c1c1c;
+}
+
+.header__nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	position: relative;
+}
+
+.header__logo {
+	font-weight: 700;
+
+	font-size: 35px;
+	line-height: 1.5em;
+
+	letter-spacing: 0.02em;
+
+	color: #ffffff;
+}
+
+.header__group {
+	position: absolute;
+	right: 0;
+
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.header__menu {
+	padding: 0;
+
+	border: 0;
+	background: transparent;
+
+	cursor: pointer;
+}
+
+.header-menu__icon {
+	display: block;
+
+	height: 30px;
+	width: 30px;
+}
+
+.header__avatar {
+	border-radius: 100%;
+}
+
+.header-avatar__img {
+	display: block;
+
+	height: 50px;
+	width: 50px;
+}
+
+.header__title {
+	font-weight: 700;
+
+	font-size: 35px;
+	line-height: 1.5em;
+
+	letter-spacing: 0.02em;
+	text-align: center;
+
+	color: #ffffff;
+}
+
+@media (max-width: 1520px) {
+	.header-menu__icon {
+		height: 24px;
+		width: 24px;
+	}
+
+	.header-avatar__img {
+		display: block;
+
+		height: 48px;
+		width: 48px;
+	}
+}
+
+/* DASHBOARD */
+.dashboard {
+	margin-top: 39px;
+}
+
+.dashboard__container {
+	display: grid;
+	grid-template-columns: 1fr 1.8fr;
+	gap: 39px;
+}
+
+.dashboard__wallet {
+	padding: 21px 23px 32px 37px;
+
+	border-radius: 24px;
+	background: #1c1c1c;
+}
+
+.dashboard-wallet__title {
+	font-weight: 600;
+
+	font-size: 28px;
+	line-height: 1.5em;
+
+	letter-spacing: 0.02em;
+
+	color: #ffffff;
+}
+
+.dashboard-wallet__inner {
+	margin-top: 23px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.dashboard-wallet__balance {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.dashboard-wallet__money {
+	font-weight: 600;
+
+	font-size: 28px;
+	line-height: 1.5em;
+
+	letter-spacing: 0.02em;
+
+	color: #ffffff;
+}
+
+.dashboard-wallet__coins {
+	font-weight: 600;
+
+	font-size: 28px;
+	line-height: 1.5em;
+
+	letter-spacing: 0.02em;
+
+	display: flex;
+	align-items: center;
+	gap: 5px;
+
+	color: #ffffff;
+}
+
+.dashboard-wallet__coins img {
+	height: 22px;
+	width: 22px;
+}
+
+.dashboard-wallet__buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.dashboard__referral {
+	padding: 21px 37px 36px;
+
+	border-radius: 24px;
+	background: #1c1c1c;
+}
+
+.dashboard-referral__title {
+	font-weight: 600;
+
+	font-size: 28px;
+	line-height: 1.5em;
+
+	letter-spacing: 0.02em;
+
+	color: #ffffff;
+}
+
+.dashboard-referral__link {
+	margin-top: 22px;
+	padding: 5px 18px;
+
+  max-width: 600px;
+
+	font-weight: 400;
+
+	font-size: 13px;
+	line-height: 1.5em;
+
+	letter-spacing: 0.02em;
+	text-decoration-line: underline;
+
+	display: block;
+
+	border-radius: 24px;
+	color: #000000;
+	background: #d9d9d9;
+}
+
+.dashboard-referral__benefits {
+	margin-top: 15px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.dashboard-referral__users {
+	font-weight: 600;
+
+	font-size: 20px;
+	line-height: 1.5em;
+
+	letter-spacing: 0.02em;
+
+	color: #ffffff;
+}
+
+.dashboard-referral__money {
+	font-weight: 600;
+
+	font-size: 20px;
+	line-height: 1.5em;
+
+	letter-spacing: 0.02em;
+
+	color: #4ba582;
+}
+
+.dashboard__game {
+	padding: 44px 80px 72px;
+
+	grid-column-start: 2;
+	grid-row-start: 1;
+	grid-row-end: 3;
+
+	border-radius: 24px;
+	background: url('../img/cabinet/dashboard/background.png') no-repeat top right /
+		cover;
+}
+
+.dashboard-game__title {
+	font-weight: 600;
+
+	font-size: 48px;
+	line-height: 1.5em;
+
+	letter-spacing: 0.02em;
+
+	color: #ffffff;
+}
+
+.dashboard-game__buttons {
+	margin-top: 24px;
+
+	width: 490px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.dashboard-game__button {
+	padding: 20px 82px 15px;
+
+	font-size: 32px;
+}
+
+.dashboard-game__button_2 {
+	font-size: 24px;
+
+	background: rgba(156, 156, 156, 0.27);
+	mix-blend-mode: normal;
+}
+
+@media (max-width: 1520px) {
+	.dashboard__container {
+		grid-template-columns: 1fr 1.5fr;
+	}
+
+  .dashboard__game {
+    padding: 21px 43px 35px;
+  }
+
+	.dashboard-game__title {
+		font-weight: 600;
+
+		font-size: 28px;
+		line-height: 1.5em;
+
+		letter-spacing: 0.02em;
+
+		color: #ffffff;
+	}
+
+	.dashboard-game__buttons {
+		width: 268px;
+	}
+
+	.dashboard-game__button {
+		padding: 8px 38px;
+
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 1320px) {
+  .dashboard__container {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard__game {
+    grid-column-start: 1;
+  }
+}
+
+/* GAMES */
+.games {
+	margin: 34px 0 44px;
+}
+
+.games__container {
+	padding: 21px 27px 40px;
+
+	border-radius: 24px;
+	background: #1c1c1c;
+}
+
+.games__title {
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 1.5em;
+
+	letter-spacing: 0.02em;
+
+	color: #ffffff;
+}
+
+.games__table {
+	margin-top: 48px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 33px;
+}
+
+.games-table__row {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.games-table__text {
+	font-weight: 600;
+
+	font-size: 15px;
+	line-height: 1.5em;
+
+	letter-spacing: 0.02em;
+
+	color: #ffffff;
+}
+
+.games-table__money {
+	font-size: 16px;
+
+	color: #4ba582;
+}
+
+@media (max-width: 1320px) {
+}
