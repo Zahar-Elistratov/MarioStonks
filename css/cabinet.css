@@ -81,10 +81,36 @@
 	}
 
 	.header-avatar__img {
-		display: block;
-
 		height: 48px;
 		width: 48px;
+	}
+}
+
+@media (max-width: 768px) {
+	.header__nav {
+		justify-content: start;
+	}
+
+	.header__logo {
+		font-size: 28px;
+	}
+
+	.header__group {
+		gap: 16px;
+	}
+
+	.header-menu__icon {
+		height: 20px;
+		width: 20px;
+	}
+
+	.header-avatar__img {
+		height: 36px;
+		width: 36px;
+	}
+
+	.header__title {
+		font-size: 28px;
 	}
 }
 
@@ -190,7 +216,7 @@
 	margin-top: 22px;
 	padding: 5px 18px;
 
-  max-width: 600px;
+	max-width: 600px;
 
 	font-weight: 400;
 
@@ -288,9 +314,9 @@
 		grid-template-columns: 1fr 1.5fr;
 	}
 
-  .dashboard__game {
-    padding: 21px 43px 35px;
-  }
+	.dashboard__game {
+		padding: 21px 43px 35px;
+	}
 
 	.dashboard-game__title {
 		font-weight: 600;
@@ -315,13 +341,71 @@
 }
 
 @media (max-width: 1320px) {
-  .dashboard__container {
-    grid-template-columns: 1fr;
-  }
+	.dashboard__container {
+		grid-template-columns: 1fr;
+	}
 
-  .dashboard__game {
-    grid-column-start: 1;
-  }
+	.dashboard__game {
+		grid-column-start: 1;
+	}
+}
+
+@media (max-width: 768px) {
+	.dashboard__game {
+		padding: 20px 20px 35px;
+	}
+
+	.dashboard-game__title {
+		font-size: 24px;
+	}
+
+	.dashboard-game__buttons {
+		gap: 16px;
+	}
+
+	.dashboard__wallet {
+		padding: 20px 20px 35px;
+	}
+
+	.dashboard-wallet__title {
+		font-size: 24px;
+	}
+
+	.dashboard-wallet__money {
+		font-size: 24px;
+	}
+
+	.dashboard-wallet__coins {
+		font-size: 24px;
+	}
+
+	.dashboard-wallet__coins img {
+		height: 18px;
+		width: 18px;
+	}
+
+	.dashboard-wallet__inner {
+		flex-direction: column;
+		align-items: start;
+		gap: 20px;
+	}
+
+	.dashboard-wallet__buttons {
+		width: 100%;
+	}
+
+	.dashboard__referral {
+		padding: 20px 25px 35px;
+	}
+
+	.dashboard-referral__title {
+		font-size: 24px;
+	}
+
+	.dashboard-referral__link {
+		padding: 5px 12px;
+		font-size: 12px;
+	}
 }
 
 /* GAMES */
@@ -376,5 +460,17 @@
 	color: #4ba582;
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 768px) {
+	.games__title {
+		font-size: 24px;
+	}
+
+	.games__wrapper {
+		overflow-x: scroll;
+	}
+
+	.games__table {
+		margin-top: 32px;
+		width: 620px;
+	}
 }

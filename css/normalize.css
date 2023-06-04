@@ -40,6 +40,12 @@ button:focus {
 	width: calc(100% - 80px);
 }
 
+@media (max-width: 768px) {
+	.container {
+		width: calc(100% - 40px);
+	}
+}
+
 .button {
 	padding: 4px 47px;
 
