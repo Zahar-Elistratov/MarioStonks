@@ -305,7 +305,7 @@
 .dashboard-game__button_2 {
 	font-size: 24px;
 
-	background: rgba(156, 156, 156, 0.27);
+	background: rgba(156, 156, 156, 0.5);
 	mix-blend-mode: normal;
 }
 
@@ -410,7 +410,7 @@
 
 /* GAMES */
 .games {
-	margin: 34px 0 44px;
+	margin-top: 39px;
 }
 
 .games__container {
@@ -455,8 +455,6 @@
 }
 
 .games-table__money {
-	font-size: 16px;
-
 	color: #4ba582;
 }
 
@@ -472,5 +470,65 @@
 	.games__table {
 		margin-top: 32px;
 		width: 620px;
+	}
+}
+
+.users {
+	margin: 39px 0 44px;
+}
+
+.users__container {
+	padding: 21px 27px 40px;
+
+	border-radius: 24px;
+	background: #1c1c1c;
+}
+
+.users__title {
+	font-weight: 600;
+
+	font-size: 28px;
+	line-height: 1.5em;
+
+	letter-spacing: 0.02em;
+
+	color: #ffffff;
+}
+
+.users__table {
+	margin-top: 48px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 33px;
+}
+
+.users-table__row {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.users-table__text {
+	font-weight: 600;
+
+	font-size: 15px;
+	line-height: 1.5em;
+
+	letter-spacing: 0.02em;
+
+	color: #ffffff;
+}
+
+.users-table__money {
+	color: #4ba582;
+}
+
+@media (max-width: 768px) {
+	.users__title {
+		font-size: 24px;
+	}
+
+	.users__table {
+		margin-top: 32px;
 	}
 }
