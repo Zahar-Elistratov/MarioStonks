@@ -96,7 +96,7 @@ body {
 }
 
 .intro {
-	padding: 60px 0 220px;
+	margin-top: 60px;
 }
 
 .intro__container {
@@ -183,6 +183,28 @@ body {
 		padding: 12px 36px;
 
 		font-size: 16px;
+	}
+}
+
+.video {
+	margin-top: 100px;
+	padding-bottom: 220px;
+}
+
+.video iframe {
+	height: 900px;
+	width: 100%;
+}
+
+@media (max-width: 1520px) {
+	.video iframe {
+		height: 500px;
+	}
+}
+
+@media (max-width: 768px) {
+	.video iframe {
+		height: 400px;
 	}
 }
 
