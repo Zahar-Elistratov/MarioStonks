@@ -26,42 +26,6 @@
 	color: #ffffff;
 }
 
-.header__group {
-	position: absolute;
-	right: 0;
-
-	display: flex;
-	align-items: center;
-	gap: 24px;
-}
-
-.header__menu {
-	padding: 0;
-
-	border: 0;
-	background: transparent;
-
-	cursor: pointer;
-}
-
-.header-menu__icon {
-	display: block;
-
-	height: 30px;
-	width: 30px;
-}
-
-.header__avatar {
-	border-radius: 100%;
-}
-
-.header-avatar__img {
-	display: block;
-
-	height: 50px;
-	width: 50px;
-}
-
 .header__title {
 	font-weight: 700;
 
@@ -74,18 +38,6 @@
 	color: #ffffff;
 }
 
-@media (max-width: 1520px) {
-	.header-menu__icon {
-		height: 24px;
-		width: 24px;
-	}
-
-	.header-avatar__img {
-		height: 48px;
-		width: 48px;
-	}
-}
-
 @media (max-width: 768px) {
 	.header__nav {
 		justify-content: start;
@@ -93,20 +45,6 @@
 
 	.header__logo {
 		font-size: 28px;
-	}
-
-	.header__group {
-		gap: 16px;
-	}
-
-	.header-menu__icon {
-		height: 20px;
-		width: 20px;
-	}
-
-	.header-avatar__img {
-		height: 36px;
-		width: 36px;
 	}
 
 	.header__title {
@@ -192,6 +130,10 @@
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
+}
+
+.dashboard-wallet__button {
+	text-transform: uppercase;
 }
 
 .dashboard__referral {
@@ -311,7 +253,7 @@
 
 @media (max-width: 1520px) {
 	.dashboard__container {
-		grid-template-columns: 1fr 1.5fr;
+		grid-template-columns: 1fr 1.2fr;
 	}
 
 	.dashboard__game {
@@ -408,42 +350,50 @@
 	}
 }
 
-/* GAMES */
-.games {
-	margin-top: 39px;
+/* TABS */
+.tabs {
+	margin: 39px 0;
 }
 
-.games__container {
+.tabs__container {
 	padding: 21px 27px 40px;
 
 	border-radius: 24px;
 	background: #1c1c1c;
 }
 
-.games__title {
-	font-weight: 600;
-	font-size: 28px;
-	line-height: 1.5em;
-
-	letter-spacing: 0.02em;
-
-	color: #ffffff;
+.tabs__buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
 }
 
-.games__table {
+.tabs__button {
+	background: rgba(156, 156, 156, 0.8);
+}
+
+.tabs__button_active {
+	background: #4ba582;
+}
+
+.tabs__table {
 	margin-top: 48px;
 
-	display: flex;
+	display: none;
 	flex-direction: column;
-	gap: 33px;
+	gap: 32px;
 }
 
-.games-table__row {
+.tabs__table.tabs__table_active {
+	display: flex;
+}
+
+.tabs-table__row {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 }
 
-.games-table__text {
+.tabs-table__text {
 	font-weight: 600;
 
 	font-size: 15px;
@@ -454,81 +404,12 @@
 	color: #ffffff;
 }
 
-.games-table__money {
+.tabs-table__money {
 	color: #4ba582;
 }
 
 @media (max-width: 768px) {
-	.games__title {
-		font-size: 24px;
-	}
-
-	.games__wrapper {
-		overflow-x: scroll;
-	}
-
-	.games__table {
-		margin-top: 32px;
-		width: 620px;
-	}
-}
-
-.users {
-	margin: 39px 0 44px;
-}
-
-.users__container {
-	padding: 21px 27px 40px;
-
-	border-radius: 24px;
-	background: #1c1c1c;
-}
-
-.users__title {
-	font-weight: 600;
-
-	font-size: 28px;
-	line-height: 1.5em;
-
-	letter-spacing: 0.02em;
-
-	color: #ffffff;
-}
-
-.users__table {
-	margin-top: 48px;
-
-	display: flex;
-	flex-direction: column;
-	gap: 33px;
-}
-
-.users-table__row {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-}
-
-.users-table__text {
-	font-weight: 600;
-
-	font-size: 15px;
-	line-height: 1.5em;
-
-	letter-spacing: 0.02em;
-
-	color: #ffffff;
-}
-
-.users-table__money {
-	color: #4ba582;
-}
-
-@media (max-width: 768px) {
-	.users__title {
-		font-size: 24px;
-	}
-
-	.users__table {
+	.tabs__table {
 		margin-top: 32px;
 	}
 }
