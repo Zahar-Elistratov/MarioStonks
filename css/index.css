@@ -6,36 +6,6 @@ body {
 	min-height: 100vh;
 }
 
-/* HEADER */
-.header {
-	padding: 40px 0;
-
-	background: #1c1c1c;
-}
-
-.header__container {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.header__logo {
-	font-weight: 700;
-
-	font-size: 35px;
-	line-height: 1.5em;
-
-	letter-spacing: 0.02em;
-
-	color: #ffffff;
-}
-
-@media (max-width: 768px) {
-	.header__logo {
-		font-size: 28px;
-	}
-}
-
 .intro {
 	margin-top: 60px;
 	padding-bottom: 220px;
@@ -153,6 +123,7 @@ body {
 
 .footer__nav {
 	display: flex;
+	justify-content: center;
 	gap: 20px;
 }
 
